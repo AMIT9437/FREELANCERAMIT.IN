@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <div>
       <h1>Welcome to Freelancer Amit's World</h1>
-<p>Your one-stop destination for Web Development and Business Legal Services – from stunning websites to GST, ITR, and company registration.
-Affordable. Reliable. On Time. Every Time.]</p>
+<p><strong>Your one-stop destination for Web Development and Business Legal Services – from stunning websites to GST, ITR, and company registration.
+Affordable. Reliable. On Time. Every Time.</strong></p>
       <div style={{ display: "flex", alignItems: "center", gap: "2rem" }}>
         <img
           src="/images/your-photo.jpg"
