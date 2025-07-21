@@ -1,0 +1,28 @@
+{
+  "name": "freelanceramit.in",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Freelancer Amit - 50+ Services Business Website",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.0"
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.1"
+  },
+  "keywords": [
+    "react",
+    "freelancer",
+    "business",
+    "services"
+  ],
+  "author": "AMIT KUMAR",
+  "license": "MIT"
+}
