@@ -1,52 +1,25 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import "./Home.css";
-
-const services = [
-  { name: "GST Registration", slug: "gst-registration", desc: "Register your business for GST quickly and easily." },
-  { name: "ITR Filing (Individual)", slug: "itr-filing", desc: "Professional help with your income tax return filing." },
-  { name: "PVT LTD Company Registration", slug: "pvt-ltd-registration", desc: "Start your private limited company hassle-free." },
-  { name: "MSME Registration", slug: "msme-registration", desc: "Get your MSME certificate and avail government benefits." },
-  { name: "Trademark Registration", slug: "trademark-registration", desc: "Protect your brand with trademark registration." },
-  { name: "PAN Card Application (Business)", slug: "pan-card-business", desc: "Apply for a business PAN card online." },
-];
+import TopServices from "../components/TopServices";
 
 export default function Home() {
-  const navigate = useNavigate();
-
   return (
-    <div className="home-page">
+    <div>
       <h1>Welcome to Freelancer Amit</h1>
-      <div className="profile-section">
+      <div style={{ display: "flex", alignItems: "center", gap: "2rem" }}>
         <img
-          src="/profile.jpg"
-          alt="Amit Kumar"
-          className="profile-photo"
+          src="/images/your-photo.jpg"
+          alt="Amit's Photo"
+          style={{ width: "120px", borderRadius: "60px", boxShadow: "0 2px 8px rgba(0,0,0,0.1)" }}
         />
         <div>
-          <div className="profile-name">AMIT KUMAR</div>
-          <div>Degree: <span>Your Degree Here</span></div>
-          <div>Qualification: <span>Your Qualifications Here</span></div>
-          <div>Details: <span>Short About You</span></div>
+          <h2>AMIT KUMAR</h2>
+          <p><strong>Degree:</strong> [Your Degree Here]</p>
+          <p><strong>Qualification:</strong> [Your Qualifications Here]</p>
+          <p><strong>Details:</strong> [Short About You]</p>
         </div>
       </div>
-      <hr />
-      <h2>Our Top Services</h2>
-      <div className="top-services">
-        {services.map((service) => (
-          <div
-            className="service-card"
-            key={service.slug}
-            onClick={() => navigate(`/services/${service.slug}`)}
-            tabIndex={0}
-            role="button"
-            aria-pressed="false"
-          >
-            <div className="service-title">{service.name}</div>
-            <div className="service-desc">{service.desc}</div>
-          </div>
-        ))}
-      </div>
+      <hr style={{ margin: "2rem 0" }} />
+      <TopServices />
     </div>
   );
 }
