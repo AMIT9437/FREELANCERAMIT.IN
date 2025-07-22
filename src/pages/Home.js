@@ -2,112 +2,48 @@ import React from "react";
 import TopServices from "../components/TopServices";
 
 export default function Home() {
-  const containerStyle = {
-    maxWidth: "960px",
-    margin: "auto",
-    padding: "1rem",
-    fontFamily: "'Montserrat', sans-serif",
-    lineHeight: 1.6,
-  };
-
-  const navStyle = {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    flexWrap: "wrap",
-    padding: "1rem 0",
-    borderBottom: "1px solid #ddd",
-  };
-
-  const navItemStyle = {
-    margin: "0.5rem",
-    fontSize: "1rem",
-    color: "#333",
-    textDecoration: "none",
-    fontWeight: "600",
-  };
-
-  const imageStyle = {
-    width: "120px",
-    borderRadius: "60px",
-    boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-    margin: "1rem 0",
-  };
-
-  const footerStyle = {
-    marginTop: "2rem",
-    paddingTop: "1rem",
-    borderTop: "1px solid #ccc",
-    textAlign: "center",
-    fontSize: "0.9rem",
-    color: "#555",
-  };
-
   return (
-    <div style={containerStyle}>
-      {/* Navigation */}
-      <nav style={navStyle}>
-        <div style={{ fontWeight: "bold", fontSize: "1.2rem", color: "#4a90e2" }}>
-          Freelancer Amit
-        </div>
-        <div>
-          <a href="/" style={navItemStyle}>Home</a>
-          <a href="/services" style={navItemStyle}>Services</a>
-          <a href="/about" style={navItemStyle}>About</a>
-          <a href="/contactus" style={navItemStyle}>Contact</a>
-        </div>
-      </nav>
-
-      {/* Welcome */}
-      <section style={{ marginTop: "1.5rem" }}>
-        <h1 style={{ fontSize: "1.6rem", color: "#222" }}>
-          Welcome to Freelancer Amit's World
-        </h1>
-        <p style={{ fontWeight: "500", color: "#444" }}>
-          Your one-stop destination for Web Development & Business Legal Services — from stunning websites to GST, ITR, and Company Registration.
+    <div style={{ maxWidth: "1000px", margin: "auto", padding: "1rem" }}>
+      <section style={{ textAlign: "center", marginBottom: "2rem" }}>
+        <h1>Welcome to Freelancer Amit's World</h1>
+        <p style={{ fontSize: "1.1rem", fontWeight: "500", color: "#555" }}>
+          Your one-stop destination for Web Development and Business Legal Services — from stunning websites to GST, ITR, and company registration.
           <br />
-          <span style={{ color: "#4a90e2" }}>Affordable. Reliable. On Time. Every Time.</span>
+          <strong>Affordable. Reliable. On Time. Every Time.</strong>
         </p>
       </section>
 
-      {/* Profile Photo */}
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <img src="/images/your-photo.jpg" alt="Amit Samal" style={imageStyle} />
-      </div>
-
-      {/* About Me */}
-      <section>
-        <h2 style={{ fontSize: "1.3rem", marginBottom: "0.5rem" }}>👋 About Me</h2>
-        <p>
-          Hi! I'm <strong>Amit Samal</strong>, a passionate freelancer helping individuals, startups, and small businesses grow — both digitally and financially.
-          I bridge the gap between professional accounting services and creative digital solutions.
+      <section style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "1rem", textAlign: "center" }}>
+        <img
+          src="/images/your-photo.jpg"
+          alt="Amit's Photo"
+          style={{ width: "130px", borderRadius: "50%", boxShadow: "0 4px 12px rgba(0,0,0,0.2)" }}
+        />
+        <h2>AMIT SAMAL</h2>
+        <p style={{ lineHeight: "1.6", textAlign: "justify" }}>
+          🎓 <strong>About My Qualifications:</strong> I hold a Bachelor of Commerce (B.Com) degree with specialization in Accounting and Taxation.
+          I’m also pursuing the prestigious CMA (Cost and Management Accountancy) qualification for advanced finance and strategy knowledge.
+          Additionally, I’m certified in GST, ITR filing, and compliance services.
+          <br /><br />
+          💻 On the tech side, I specialize in full-stack web development using HTML, CSS, and Python (Flask). I'm skilled in tools like Canva and Photoshop to create sleek, custom graphics and designs. From legal registration to online presence, I provide one-stop business support for freelancers, influencers, and MSMEs.
         </p>
-        <p>
-          From GST registration to Income Tax filing, and from designing websites to crafting custom graphics —
-          I simplify complex processes with professional care and creative energy.
+        <p style={{ lineHeight: "1.6", textAlign: "justify" }}>
+          👋 <strong>About Me:</strong> I'm Amit Samal — passionate freelancer, business consultant, and web designer. I help individuals and small businesses
+          simplify legal processes like GST, ITR, and company registration while building powerful digital footprints through websites and design.
+          Let’s grow your business — financially and digitally.
         </p>
       </section>
 
-      {/* Qualifications */}
-      <section>
-        <h2 style={{ fontSize: "1.3rem", marginTop: "2rem" }}>🎓 My Qualifications</h2>
-        <ul style={{ paddingLeft: "1.2rem" }}>
-          <li>Bachelor of Commerce (B.Com) – Accounting & Taxation</li>
-          <li>Currently pursuing CMA (Cost and Management Accountancy)</li>
-          <li>Certified in GST, ITR Filing & Business Compliance</li>
-          <li>Skilled in Web Development (HTML, CSS, Python/Flask)</li>
-          <li>Proficient in Canva & Adobe Photoshop</li>
-        </ul>
-      </section>
-
-      {/* Top Services */}
       <hr style={{ margin: "2rem 0" }} />
-      <TopServices />
 
-      {/* Footer */}
-      <footer style={footerStyle}>
-        <p><a href="/about">About</a> | <a href="/contactus">Contact Us</a></p>
-        <p>© 2025 Freelancer Amit. All rights reserved.</p>
+      <section>
+        <TopServices />
+      </section>
+
+      <footer style={{ marginTop: "3rem", textAlign: "center", fontSize: "0.9rem", color: "#777" }}>
+        <p><strong>About:</strong> Freelancer Amit provides 50+ services to entrepreneurs, students, influencers, and MSMEs across India.</p>
+        <p><strong>Contact Us:</strong> Email: freelanceramit@yourmail.com | Phone: +91-XXXXXXXXXX</p>
+        <p>© 2025 Freelancer Amit. All Rights Reserved.</p>
       </footer>
     </div>
   );
