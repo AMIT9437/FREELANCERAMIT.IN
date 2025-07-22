@@ -1,207 +1,293 @@
 import React from "react";
+
 export default function Documents() {
+  const services = [
+    {
+      title: "GST Registration",
+      docs: "PAN, Aadhaar, Address Proof, Photo, Business Proof",
+      about:
+        "GST registration enables businesses to collect tax and claim input credit. This is mandatory for those above the turnover threshold or interstate trade.",
+      importance: "Ensures legal tax compliance and the ability to conduct business under GST."
+    },
+    {
+      title: "ITR Filing",
+      docs: "PAN, Aadhaar, Salary Slips, Form 16, Bank Statements",
+      about:
+        "Income Tax Return filing reports your income and taxes paid for the financial year. It’s required for individuals and businesses with taxable income.",
+      importance: "Avoids penalties, enables refunds, and ensures good financial standing."
+    },
+    {
+      title: "MSME (Udyam) Registration",
+      docs: "Aadhaar, PAN, Business Address Proof, Bank Details",
+      about:
+        "Udyam registration provides official recognition for micro, small, and medium enterprises and unlocks many benefits.",
+      importance: "Grants access to government loans, subsidies, and preferential treatment in procurement."
+    },
+    {
+      title: "Private Limited Company Registration",
+      docs: "PAN & Aadhaar of directors, Proof of Address, Photos, Rent Agreement, Utility Bill, DSC & DIN",
+      about:
+        "Creating a Pvt Ltd company gives you a separate legal entity with limited liability. It also improves credibility and opens up funding avenues.",
+      importance: "Protects owner’s personal assets and enhances professional perception."
+    },
+    {
+      title: "Proprietorship Firm Registration",
+      docs: "PAN, Aadhaar, Address Proof, Utility Bill",
+      about:
+        "A sole proprietor business is easy to form and operate with minimal documentation. Ideal for freelancers and small businesses.",
+      importance: "Legally formalizes your business and opens access to banking and tax filings."
+    },
+    {
+      title: "PAN Card Application",
+      docs: "Aadhaar, Address Proof, Passport Photo",
+      about:
+        "PAN is a mandatory identity for all financial and tax-related transactions in India.",
+      importance: "Required for tax filings, banking, investments, and business registrations."
+    },
+    {
+      title: "TAN Registration",
+      docs: "PAN, Business Details, Address Proof",
+      about:
+        "TAN is required by any entity that deducts tax at source (TDS) while making payments.",
+      importance: "Ensures legal deduction and deposit of TDS, avoiding penalties."
+    },
+    {
+      title: "Digital Signature Certificate (DSC)",
+      docs: "PAN, Aadhaar, Passport Photo, Email, Phone",
+      about:
+        "DSC is an encrypted digital credential for signing documents electronically, required for e‑filings.",
+      importance: "Ensures secure, verifiable digital signatures on GST, MCA, and tender documents."
+    },
+    {
+      title: "GST Return Filing",
+      docs: "Sales & Purchase Invoices, Bank Statements",
+      about:
+        "Filing monthly or quarterly GST returns (e.g. GSTR‑1, GSTR‑3B) reports your tax collection and input credit claims.",
+      importance: "Keeps your GST registration active and compliant with legal norms."
+    },
+    {
+      title: "TDS Return Filing",
+      docs: "TAN, Challans, PAN of Deductees, Payment Details",
+      about:
+        "Quarterly filing of taxes withheld at source for salary, rent, or professional fees paid by your business.",
+      importance: "Ensures deductees receive credit and you avoid penalties for non‑filing."
+    },
+    {
+      title: "Accounting & Bookkeeping",
+      docs: "Invoices, Bills, Bank Statements, Expense Records",
+      about:
+        "Monthly bookkeeping lets you track income, expenses, and financial position systematically.",
+      importance: "Essential for tax filings, audits, loan applications, and business insights."
+    },
+    {
+      title: "Business Audit Support",
+      docs: "Financial Statements, Ledgers, Tax Records",
+      about:
+        "Audit reviews your accounts for accuracy, detects fraud, and ensures compliance with regulations.",
+      importance: "Strengthens credibility and is mandatory for certain business types."
+    },
+    {
+      title: "Partnership Firm Registration",
+      docs: "PAN, Aadhaar of Partners, Partnership Deed, Address Proof",
+      about:
+        "Forming a registered partnership requires a legal agreement and structured responsibilities.",
+      importance: "Legally binds partners and improves transparency in business operations."
+    },
+    {
+      title: "Logo Design",
+      docs: "Business Name, Brand Concept, Color Preferences",
+      about:
+        "A distinctive logo visually defines your brand identity across all marketing and communication.",
+      importance: "Increases brand recall and ensures a professional perception."
+    },
+    {
+      title: "Static Website Development",
+      docs: "Content, Photos, Logo, Business Details",
+      about:
+        "A clean, multi‑page website built with HTML/CSS, ideal for showcasing your services or portfolio.",
+      importance: "Creates a credible online presence that’s quick to build and maintain."
+    },
+    {
+      title: "Dynamic Website Development",
+      docs: "Content, Images, Business Logic, Hosting Access",
+      about:
+        "Dynamic websites (with Flask, databases) allow interactive content like forms and real‑time updates.",
+      importance: "Enhances user experience and supports data‑driven functionalities."
+    },
+    {
+      title: "Landing Page Design",
+      docs: "Product Info, Images, Call‑to‑action Text",
+      about:
+        "A single‑page marketing site focused on conversions—user signups, leads, or promotional offers.",
+      importance: "Boosts campaign performance and captures audience action."
+    },
+    {
+      title: "Birthday Webpage (Custom)",
+      docs: "Photos, Name, Message, Theme Preferences",
+      about:
+        "A personalized celebratory webpage with animations and greetings for birthdays or events.",
+      importance: "Creates unique and memorable online experiences."
+    },
+    {
+      title: "Visiting Card Design",
+      docs: "Name, Contact Info, Brand Identity Elements",
+      about:
+        "A professional card design that leaves a lasting first impression in meetings and networking.",
+      importance: "Essential for client interactions and brand consistency."
+    },
+    {
+      title: "Flyer/Poster Design",
+      docs: "Event Details, Brand Info, Visual Assets",
+      about:
+        "Creative marketing materials for digital or print distribution to promote products or events.",
+      importance: "Attracts attention and communicates offers effectively."
+    },
+    {
+      title: "HTML Contact Form Integration",
+      docs: "Hosting Access, Email ID, Backend API (if any)",
+      about:
+        "A contact form on your website that allows visitors to send inquiries directly.",
+      importance: "Boosts lead capture and client engagement."
+    },
+    {
+      title: "Google Business Listing",
+      docs: "Business Name, Address, Phone, Photos",
+      about:
+        "Registering your business on Google Maps and Search improves local discoverability.",
+      importance: "Attracts local customers and enhances trust."
+    },
+    {
+      title: "Domain & Hosting Setup",
+      docs: "Domain Choice, Payment Info, Hosting Credentials",
+      about:
+        "Registering a web domain and connecting it with hosting servers makes your site live.",
+      importance: "Without this, your website cannot be accessed online."
+    },
+    {
+      title: "Social Media Graphics",
+      docs: "Brand Colors, Message, Visual Style",
+      about:
+        "Custom templates for Instagram, Facebook, and other platforms to maintain brand consistency.",
+      importance: "Improves online engagement and brand identity."
+    },
+    {
+      title: "Digital Business Card (HTML)",
+      docs: "Name, Contact Info, Logo, Photo",
+      about:
+        "An interactive card that can be viewed via browser or QR code, replacing printed cards.",
+      importance: "Easy to share and update digitally."
+    },
+    {
+      title: "Portfolio Website",
+      docs: "Work Samples, Bio, Contact!",
+      about:
+        "A showcase site presenting your projects, testimonials, and services in a structured layout.",
+      importance: "Helps build credibility and attract clients."
+    },
+    {
+      title: "Freelance Profile Page",
+      docs: "Photo, Skills, Service Listing, Contact",
+      about:
+        "Single-page profile to demonstrate your freelance offerings with examples and contact info.",
+      importance: "Helps convert online traffic into clients."
+    },
+    {
+      title: "Resume Webpage",
+      docs: "Resume Content, Photo, Career Info",
+      about:
+        "Digital resume site showcasing your skills, experience, and contact info for employers.",
+      importance: "Enhances professionalism and online presence."
+    },
+    {
+      title: "Startup Consulting",
+      docs: "Business Plan, ID Proof, Financial Overview",
+      about:
+        "Consulting on legal registrations, market entry, finance planning, and digital strategy.",
+      importance: "Helps startups avoid pitfalls and start strong."
+    },
+    {
+      title: "Annual Compliance Filing",
+      docs: "Fin Statements, Board Minutes, ROC Credentials",
+      about:
+        "Covers mandatory filings like annual returns, financials, and director declarations.",
+      importance: "Keeps your company legally active and penalty-free."
+    },
+    {
+      title: "ITR for Freelancers",
+      docs: "PAN, Bank Statement, Invoice Copies",
+      about:
+        "Income tax filing for self-employed & gig economy workers based on annual earnings.",
+      importance: "Maintains compliance and supports loan/visa applications."
+    },
+    {
+      title: "Basic e‑Commerce Site",
+      docs: "Product Catalog, Photos, Pricing, Payment Setup",
+      about:
+        "A starter online store to list products, categories, and accept payments.",
+      importance: "Opens up digital sales channels."
+    },
+    {
+      title: "HTML Photo Frame Page",
+      docs: "Photos, Event Details",
+      about:
+        "Stylish HTML page to frame photos for occasions like birthdays or anniversaries.",
+      importance: "Creates shareable digital memories."
+    },
+    {
+      title: "Income Certificate Application",
+      docs: "Aadhaar, Income Proof, Form",
+      about:
+        "Helps you apply for official income certificates required for various privileges.",
+      importance: "Necessary for scholarships and govt programs."
+    },
+    {
+      title: "Caste Certificate Support",
+      docs: "Aadhaar, Family Ration Card, Residence Proof",
+      about:
+        "Assists in creating caste certificates for SC/ST/OBC categories.",
+      importance: "Needed for reservation benefits and schemes."
+    },
+    {
+      title: "Website Redesign",
+      docs: "Old Site URL, Design Preferences",
+      about:
+        "Revamps existing site to modern UI/UX standards with mobile responsiveness.",
+      importance: "Improves usability, load speed, and SEO."
+    },
+    {
+      title: "Financial Projection Sheet",
+      docs: "Financial Estimates, Cost & Revenue Data",
+      about:
+        "Builds detailed budget, forecast, and cash flow sheets for planning.",
+      importance: "Essential for fundraising, planning, and investor confidence."
+    },
+    {
+      title: "Invoice Template Design (GST)",
+      docs: "Business Info, GSTIN",
+      about:
+        "Custom invoice design with GST compliance, branding, and professional layout.",
+      importance: "Supports legal billing and projected image."
+    },
+    {
+      title: "Balance Sheet Creation",
+      docs: "Bank Statements, Asset & Liability Records",
+      about:
+        "Produces accurate balance sheets that present business financial status.",
+      importance: "Important for audits, loans, and financial clarity."
+    }
+  ];
+
   return (
-    <div>
-      <h2>DOCUMENTS REQUIRED</h2>
-      <p>1. GST Registration
-Required Documents: PAN, Aadhaar, Address Proof, Photo, Business Proof
-About: GST registration allows businesses to collect tax from customers and claim input tax credit. It is mandatory for businesses exceeding turnover limits.
-Why Important: Ensures tax compliance and legal authorization to do business.
-
-2. ITR Filing
-Required Documents: PAN, Aadhaar, Salary Slips, Form 16, Bank Statements
-About: Filing Income Tax Returns (ITR) is mandatory for individuals and businesses with taxable income. It reflects income, tax liability, and deductions.
-Why Important: Avoid penalties, claim refunds, and maintain a clean tax record.
-
-3. MSME Registration
-Required Documents: Aadhaar, PAN, Business Address Proof, Bank Details
-About: MSME registration provides government recognition for micro, small, and medium enterprises. It’s beneficial for subsidies and schemes.
-Why Important: Access to loans, tax exemptions, and support from government initiatives.
-
-4. Private Limited Company Registration
-Required Documents: PAN, Aadhaar, Address Proof, Photos, Rent Agreement, Utility Bill
-About: A private limited company is a structured form of business offering limited liability and separate legal identity.
-Why Important: Builds credibility and limits personal liability of owners.
-
-5. Proprietorship Firm Registration
-Required Documents: PAN, Aadhaar, Address Proof, Utility Bill
-About: A sole proprietorship is a basic business structure owned by one person. It's easy to set up and operate.
-Why Important: Allows legal operation and identity of the business.
-
-6. PAN Card Application
-Required Documents: Identity Proof, Address Proof, Passport-sized Photo
-About: PAN is a mandatory identity for income tax filing and other financial activities in India.
-Why Important: Essential for banking, tax, and investment transactions.
-
-7. TAN Registration
-Required Documents: PAN, Business Details, Address Proof
-About: TAN is required for businesses that deduct TDS (Tax Deducted at Source).
-Why Important: Enables legal deduction and remittance of TDS.
-
-8. Digital Signature Certificate (DSC)
-Required Documents: PAN, Aadhaar, Email, Phone, Passport Photo
-About: A DSC is an encrypted digital key used to sign official documents online.
-Why Important: Required for e-filing of tax, ROC, and tender documents.
-
-9. GST Return Filing (Monthly/Quarterly)
-Required Documents: Sales & Purchase Data, Invoices, Bank Statement
-About: Regular GST filing ensures businesses comply with tax laws and claim input credits.
-Why Important: Mandatory to avoid fines and maintain business compliance.
-
-10. TDS Return Filing
-Required Documents: TAN, Deduction Details, Challan, PAN of Deductees
-About: TDS returns record all tax deductions made by the business. Filing is required quarterly.
-Why Important: Prevents penalty and enables deductees to claim credits.
-
-11. Accounting Services (Monthly/Yearly)
-Required Documents: Bills, Invoices, Bank Statements, Expense Records
-About: Systematic recording of all financial transactions for analysis, planning, and tax compliance.
-Why Important: Keeps finances organized and supports decision-making.
-
-12. Bookkeeping Services
-Required Documents: Day-to-day Transactions, Expense Receipts, Sales Details
-About: Accurate daily records of income and expenses essential for maintaining company ledgers.
-Why Important: Supports audits, taxation, and business transparency.
-
-13. Business Audit Support
-Required Documents: Balance Sheet, Ledger, Financial Statements, Tax Records
-About: Audit ensures financial accuracy and checks for fraud, irregularities, and compliance.
-Why Important: Builds trust and is mandatory in many businesses.
-
-14. Partnership Firm Registration
-Required Documents: PAN, Aadhaar, Partnership Deed, Address Proof
-About: Two or more people can form a registered business under a partnership agreement.
-Why Important: Provides legal protection and clear distribution of responsibilities.
-
-15. Logo Design
-Required Documents: Business Name, Concept/Idea, Color Preferences
-About: A logo visually represents your brand and makes your business recognizable.
-Why Important: Establishes brand identity and improves marketing presence.
-
-16. Static Website Development
-Required Documents: Business Details, Content, Photos, Logo
-About: A simple website with fixed content, ideal for showcasing services or portfolios.
-Why Important: Builds an online presence and credibility.
-
-17. Dynamic Website Development
-Required Documents: Content, Images, Business Logic, Hosting Access
-About: Dynamic websites allow data-driven content updates and user interaction.
-Why Important: Enhances engagement and improves customer experience.
-
-18. Landing Page Design
-Required Documents: Service/Product Info, Images, Call-to-action Text
-About: A focused single-page site aimed at generating leads or promoting offers.
-Why Important: Boosts conversions and marketing results.
-
-19. Custom Birthday Page (HTML)
-Required Documents: Photos, Message, Name, Theme Choice
-About: A personalized webpage to wish loved ones uniquely with animations and photos.
-Why Important: Makes celebrations special and memorable.
-
-20. Business Visiting Card Design
-Required Documents: Name, Design Preferences, Contact Details
-About: A digital or print-ready business card with key details and branding.
-Why Important: Useful for networking and professional identity.
-
-21. Flyer/Poster Design
-Required Documents: Business Info, Services Offered, Photos/Offers
-About: Creative marketing flyers to promote services or events online or offline.
-Why Important: Attracts attention and spreads awareness quickly.
-
-22. HTML Contact Form Integration
-Required Documents: Hosting Access, Email ID
-About: An interactive form embedded on your website to collect user inquiries.
-Why Important: Increases communication with potential clients.
-
-23. Google Business Listing Setup
-Required Documents: Business Name, Address, Phone, Photos
-About: Listing on Google improves local visibility and searchability.
-Why Important: Brings local customers and builds trust.
-
-24. Domain & Hosting Setup
-Required Documents: Domain Name Choice, Email, Payment Info
-About: Required to publish websites online and store website data.
-Why Important: Without domain/hosting, a website cannot go live.
-
-25. Social Media Graphics Design
-Required Documents: Business Type, Platform, Content Idea
-About: Visually appealing graphics for platforms like Instagram and Facebook.
-Why Important: Boosts engagement and strengthens brand identity.
-
-26. Digital Business Card (HTML)
-Required Documents: Name, Contact Info, Photo, Logo
-About: A modern HTML-based business card viewable on mobile and web.
-Why Important: Easy sharing and updated contact method.
-
-27. Portfolio Website
-Required Documents: Work Samples, About Info, Contact Info
-About: Showcases your work, skills, and services in a structured layout.
-Why Important: Builds personal brand and attracts clients.
-
-28. Freelance Profile Page
-Required Documents: Profile Photo, Skills, Bio, Contact
-About: A single page to showcase your freelancing skills and work samples.
-Why Important: Essential for freelancers to attract leads and conversions.
-
-29. Resume/CV Webpage
-Required Documents: Resume Content, Photo, Career Info
-About: An online version of your resume with a professional layout.
-Why Important: Makes your profile more accessible and impressive.
-
-30. Startup Consulting Service
-Required Documents: Business Idea Brief, Identity Proof
-About: Guidance on legal setup, finance, and digital setup of a new business.
-Why Important: Reduces mistakes and ensures smooth launching.
-
-31. Company Annual Compliance Filing
-Required Documents: Financial Statements, Board Resolutions
-About: Annual ROC filing and compliance is mandatory for registered companies.
-Why Important: Keeps the business legally active and avoids penalties.
-
-32. ITR Filing for Freelancers
-Required Documents: PAN, Bank Statement, Earning Proof
-About: Filing return for freelancers earning from online/offline gigs.
-Why Important: Ensures compliance and eligibility for loans, credit cards.
-
-33. eCommerce Website (Basic)
-Required Documents: Product Details, Photos, Payment Info
-About: A site to showcase and sell products online.
-Why Important: Opens digital selling opportunities.
-
-34. Basic HTML Photo Frame Page
-Required Documents: Photos, Occasion Info
-About: Beautifully styled web page displaying images for birthdays, anniversaries.
-Why Important: Creates unique memories and emotional value.
-
-35. Income Certificate Support
-Required Documents: Aadhaar, Income Proof, Application Form
-About: Helps apply for official income certificates through correct documentation.
-Why Important: Needed for scholarships, government schemes.
-
-36. Caste Certificate Assistance
-Required Documents: Aadhaar, Family ID, Residence Proof
-About: Support for creating SC/ST/OBC certificates as per state rules.
-Why Important: Mandatory for reservation and government aid.
-
-37. Website Redesign Service
-Required Documents: Existing Website URL, Design Feedback
-About: Upgrading your current website with modern UI/UX and mobile responsiveness.
-Why Important: Improves performance, user experience, and ranking.
-
-38. Financial Projection Sheet (Excel)
-Required Documents: Cost Estimates, Income Details
-About: A projected P&L statement for startups, investors, and loan approval.
-Why Important: Shows growth potential and business planning.
-
-39. Invoice Template Design (GST)
-Required Documents: Business Info, GSTIN
-About: Professional invoice formats with GST and branding.
-Why Important: Ensures legal billing and better brand image.
-
-40. Balance Sheet Preparation
-Required Documents: Bank Statements, Ledger, Assets/Liabilities
-About: Creation of balance sheets for business financial health checks.
-Why Important: Required for audits, funding, and compliance.</p>
+    <div style={{ padding: "1rem", maxWidth: "800px", margin: "auto" }}>
+      <h2>Documents Required for Services</h2>
+      {services.map((s, i) => (
+        <section key={i} style={{ background: "#fafafa", padding: "1rem", margin: "1rem 0", borderRadius: "6px" }}>
+          <h3>{i + 1}. {s.title}</h3>
+          <p><strong>Required Documents:</strong> {s.docs}</p>
+          <p><strong>About:</strong> {s.about}</p>
+          <p><strong>Why It's Important:</strong> {s.importance}</p>
+        </section>
+      ))}
     </div>
   );
 }
