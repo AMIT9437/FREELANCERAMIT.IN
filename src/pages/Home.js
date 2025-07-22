@@ -3,32 +3,73 @@ import TopServices from "../components/TopServices";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Welcome to Freelancer Amit's World</h1>
-<p><strong>Your one-stop destination for Web Development and Business Legal Services – from stunning websites to GST, ITR, and company registration.
-Affordable. Reliable. On Time. Every Time.</strong></p>
-      <div style={{ display: "flex", alignItems: "center", gap: "2rem" }}>
+    <div style={{ padding: "1rem", fontFamily: "Segoe UI, sans-serif", lineHeight: 1.6 }}>
+      <header style={{ textAlign: "center", marginBottom: "2rem" }}>
+        <h1 style={{ color: "#1e90ff" }}>🌐 Welcome to Freelancer Amit's World</h1>
+        <p style={{ fontSize: "1.1rem", maxWidth: "800px", margin: "auto", fontWeight: "500" }}>
+          <strong>
+            Your one-stop destination for Web Development and Business Legal Services —
+            from stunning websites to GST, ITR, and company registration. <br />
+            Affordable. Reliable. On Time. Every Time.
+          </strong>
+        </p>
+      </header>
+
+      <section style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: "1rem",
+        marginBottom: "2rem"
+      }}>
         <img
           src="/images/your-photo.jpg"
           alt="Amit's Photo"
-          style={{ width: "120px", borderRadius: "60px", boxShadow: "0 2px 8px rgba(0,0,0,0.1)" }}
+          style={{
+            width: "140px",
+            borderRadius: "50%",
+            boxShadow: "0 4px 10px rgba(0,0,0,0.2)"
+          }}
         />
-        <div>
-          <h2>AMIT SAMAL</h2>
-          <p><strong>🎓 About My Qualifications:</strong> I hold a Bachelor of Commerce (B.Com) degree with a specialization in Accounting and Taxation, which laid a strong foundation in finance, tax laws, and business principles. Currently, I am pursuing the professional CMA (Cost and Management Accountancy) course, where I’m gaining in-depth knowledge of cost accounting, financial management, strategic decision-making, and taxation. In addition to my academic journey, I am certified in GST, Income Tax Return (ITR) filing, and various aspects of business compliance.
+        <div style={{ maxWidth: "900px", textAlign: "left" }}>
+          <h2 style={{ marginBottom: "0.5rem", color: "#333" }}>👤 Amit Samal</h2>
 
-On the technical side, I specialize in web development using HTML, CSS, and Python (Flask), and have hands-on experience in designing responsive, user-friendly websites. My design skills extend to tools like Canva and Adobe Photoshop, which I use to create compelling graphics for businesses, influencers, and creators. With this combined expertise in finance and tech, I help individuals and small enterprises build a strong digital and professional presence</p>
-          <p><strong>👋 About Me:</strong> Hi! I'm Amit Samal, a passionate freelancer dedicated to helping individuals, startups, and small businesses grow — both digitally and financially. With a background in commerce and hands-on expertise in business compliance and web development, I bridge the gap between professional accounting services and creative digital solutions.
+          <h3 style={{ color: "#007acc" }}>🎓 My Qualifications</h3>
+          <p>
+            I hold a <strong>Bachelor of Commerce (B.Com)</strong> degree with a specialization in Accounting and Taxation, 
+            which laid a strong foundation in finance, tax laws, and business principles. Currently, 
+            I am pursuing the professional <strong>CMA (Cost and Management Accountancy)</strong> course, 
+            where I’m gaining in-depth knowledge of cost accounting, financial management, strategic decision-making, and taxation.
+          </p>
+          <p>
+            Additionally, I am certified in <strong>GST, Income Tax Return (ITR) Filing</strong>, and business compliance. 
+            I also specialize in <strong>Web Development</strong> using HTML, CSS, Python (Flask), and graphic design with 
+            Canva and Adobe Photoshop.
+          </p>
 
-From GST registration to income tax filing, and from designing personalized websites to crafting custom graphics — I do it all under one roof. I believe in simplifying complex processes, whether it's launching a business legally or building a beautiful online presence.
-
-Currently pursuing my CMA (Cost and Management Accountancy), I stay updated with the latest in finance and technology to deliver value-driven results for every client. Whether you're an influencer needing a personal website or a business looking for registration and compliance help — I’m here to make it easy for you.
-
-Let’s grow your brand, together.</p>
+          <h3 style={{ color: "#007acc" }}>👋 About Me</h3>
+          <p>
+            Hi! I'm Amit Samal, a passionate freelancer dedicated to helping individuals, startups, and small businesses grow —
+            both digitally and financially. With a background in commerce and hands-on expertise in business compliance and 
+            web development, I bridge the gap between professional accounting services and creative digital solutions.
+          </p>
+          <p>
+            From GST registration to income tax filing, and from designing websites to custom graphic design —
+            I do it all under one roof. I believe in simplifying complex processes for my clients.
+            Whether you're an influencer needing a personal website or a small business needing compliance help —
+            I’m here to make it easy.
+          </p>
+          <p>
+            Let’s grow your brand, together.
+          </p>
         </div>
-      </div>
+      </section>
+
       <hr style={{ margin: "2rem 0" }} />
-      <TopServices />
+
+      <section>
+        <TopServices />
+      </section>
     </div>
   );
 }
