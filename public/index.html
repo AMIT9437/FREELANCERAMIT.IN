@@ -3,10 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    
-    <!-- Mobile responsive meta tag (updated) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <meta name="theme-color" content="#4a90e2" />
     <meta name="description" content="Freelancer Amit: 50+ Business & Legal Services for India" />
     <meta name="keywords" content="freelancer, amit, gst, company registration, legal, business services, india, msme, itr, consulting" />
@@ -14,62 +11,24 @@
     <meta property="og:description" content="Professional, fast, and affordable business and legal services for startups, MSMEs, and individuals." />
     <meta property="og:image" content="%PUBLIC_URL%/images/your-photo.jpg" />
     <meta property="og:type" content="website" />
-    
     <title>Freelancer Amit | 50+ Business & Legal Services</title>
-
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet" />
-    
     <style>
       body {
         margin: 0;
-        font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        font-family: 'Montserrat', sans-serif;
+        background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
         min-height: 100vh;
         color: #222;
-        overflow-x: hidden; /* Prevent horizontal scroll on mobile */
       }
-
       #root {
         min-height: 100vh;
       }
-
       ::selection {
         background: #4a90e2;
         color: #fff;
       }
-
-      .loading-spinner {
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        border: 6px solid #f3f3f3;
-        border-top: 6px solid #4a90e2;
-        border-radius: 50%;
-        width: 48px;
-        height: 48px;
-        animation: spin 1s linear infinite;
-        z-index: 1000;
-      }
-
-      @keyframes spin {
-        0% { transform: translate(-50%, -50%) rotate(0deg); }
-        100% { transform: translate(-50%, -50%) rotate(360deg); }
-      }
     </style>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        var loader = document.createElement("div");
-        loader.className = "loading-spinner";
-        loader.id = "global-loader";
-        document.body.appendChild(loader);
-      });
-      window.onload = function() {
-        var loader = document.getElementById("global-loader");
-        if (loader) loader.style.display = "none";
-      };
-    </script>
   </head>
   <body>
     <noscript>
