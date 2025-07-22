@@ -24,9 +24,9 @@ const Contact = () => {
       <h1 style={{ textAlign: "center", marginBottom: "2rem" }}>📞 Contact Us</h1>
 
       <div style={{ marginBottom: "2rem", textAlign: "center" }}>
-        <p><strong>📍 Address:</strong> Bhubaneswar, Odisha, India</p>
-        <p><strong>📞 Phone:</strong> +91-XXXXXXXXXX</p>
-        <p><strong>📧 Email:</strong> contact@freelanceramit.in</p>
+        <p><strong>📍 Address:</strong> Rasulgar, Bhubaneswar, Odisha-751010, India</p>
+        <p><strong>📞 Phone:</strong> +91-8480927094</p>
+        <p><strong>📧 Email:</strong> amitfreelance.services@gmail.com</p>
         <p><strong>🌐 Website:</strong> www.freelanceramit.in</p>
       </div>
 
