@@ -42,7 +42,7 @@ export default function Home() {
 
       <footer style={{ marginTop: "3rem", textAlign: "center", fontSize: "0.9rem", color: "#777" }}>
         <p><strong>About:</strong> Freelancer Amit provides 50+ services to entrepreneurs, students, influencers, and MSMEs across India.</p>
-        <p><strong>Contact Us:</strong> Email: freelanceramit@yourmail.com | Phone: +91-XXXXXXXXXX</p>
+        <p><strong>Contact Us:</strong> Email: amitfreelance.services@gmail.com | Phone: +91-8480927094</p>
         <p>© 2025 Freelancer Amit. All Rights Reserved.</p>
       </footer>
     </div>
