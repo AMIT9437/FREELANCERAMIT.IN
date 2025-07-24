@@ -3,47 +3,47 @@ import { useNavigate } from 'react-router-dom';
 
 const inspirations = [
   {
-    name: 'CMA Ashim Kumar Dhala',
+    name: 'ASHIM BHAI',
     id: 'ashim',
     image: '/images/ashim.jpg',
   },
   {
-    name: 'Arijit Panda',
+    name: 'ARIJIT BHAI',
     id: 'arijit',
     image: '/images/arijit.jpg',
   },
   {
-    name: 'Deepak Kumar Sahoo',
+    name: 'DEEPAK BHAI',
     id: 'deepak',
     image: '/images/deepak.jpg',
   },
   {
-    name: 'Jaybrat Das (JD Bro)',
+    name: 'JAYBRAT BHAI',
     id: 'jaybrat',
     image: '/images/jd.jpg',
   },
   {
-    name: 'Umakanta Satpathy',
+    name: 'UMAKANTA BHAI',
     id: 'uma',
     image: '/images/uma.jpg',
   },
   {
-    name: 'Avinas Senapati',
+    name: 'AVINAS BHAI',
     id: 'avinas',
     image: '/images/avinas.jpg',
   },
   {
-    name: 'Sahil Sahoo',
+    name: 'SAHIL BHAI(PUSHPA RAJ)',
     id: 'sahil',
     image: '/images/sahil.jpg',
   },
   {
-    name: 'Anil Paswan Sir',
+    name: 'ANIL PASWAN SIR',
     id: 'anil',
     image: '/images/anil.jpg',
   },
   {
-    name: 'Nikhil & Dipu (Friends)',
+    name: 'NIKHIL BHAI & CHIKU',
     id: 'friends',
     image: '/images/nikhil_dipu.jpg',
   },
