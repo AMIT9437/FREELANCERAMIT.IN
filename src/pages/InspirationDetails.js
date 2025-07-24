@@ -6,21 +6,21 @@ const inspirationData = {
   ashim: {
     name: 'CMA ASHIM BHAI',
     image: '/images/ashim.jpg',
-    message: 'Ashim Bhai, you are not just my senior—you are truly like my real brother. In every phase of my journey, you stood beside me—not only guiding me but protecting me like family. Your brilliant mind and AIR 36 achievement inspire me deeply, but what inspires me even more is your kind heart, humble nature, and the way you care for others without showing off.
+    message: `Ashim Bhai, you are not just my senior—you are truly like my real brother. In every phase of my journey, you stood beside me—not only guiding me but protecting me like family. Your brilliant mind and AIR 36 achievement inspire me deeply, but what inspires me even more is your kind heart, humble nature, and the way you care for others without showing off.
 Whenever I felt low or confused, your support gave me confidence, your words gave me direction. You never let me feel alone in this journey. People like you are rare—those who rise high but never forget to lift others. I’m truly blessed to have you in my life. You are not just my inspiration—you are my strength.',
   },
   arijit: {
     name: 'ARIJIT BHAI',
     image: '/images/arijit.jpg',
-    message: 'Arijit Bhai, you’ve taught me things no book could teach. You may speak sharply sometimes, but deep inside I know every word comes from love, care, and honesty. You are experienced, intelligent, and always practical—and those qualities make you a true leader in both studies and life.
-Even if your truth hurts, it corrects me. Even if your advice feels strict, it saves me. You are the one who helps me identify my mistakes and become stronger. You are a brother who wants to see me grow—not by making me feel good, but by making me better. Your journey as a CMA Finalist and business consultant inspires me to build not just a career, but a life with purpose and clarity. I respect you from the bottom of my heart',
+    message: Arijit Bhai, you’ve taught me things no book could teach. You may speak sharply sometimes, but deep inside I know every word comes from love, care, and honesty. You are experienced, intelligent, and always practical—and those qualities make you a true leader in both studies and life.
+Even if your truth hurts, it corrects me. Even if your advice feels strict, it saves me. You are the one who helps me identify my mistakes and become stronger. You are a brother who wants to see me grow—not by making me feel good, but by making me better. Your journey as a CMA Finalist and business consultant inspires me to build not just a career, but a life with purpose and clarity. I respect you from the bottom of my heart.`,
   },
   deepak: {
     name: 'DEEPAK BHAI',
     image: '/images/deepak.jpg',
-    message: 'Deepak Bhai, your name reminds me of brilliance—because you truly are one of the brightest people I’ve ever met. Topping the Odisha Board exams, CMA Inter, and being my past roommate—I’ve seen your excellence not from a distance, but closely, every day.
+    message: `Deepak Bhai, your name reminds me of brilliance—because you truly are one of the brightest people I’ve ever met. Topping the Odisha Board exams, CMA Inter, and being my past roommate—I’ve seen your excellence not from a distance, but closely, every day.
 We sat at the same table, walked the same path, and you treated me not just as a friend—but like a younger brother who needed guidance. You always explained my doubts like a teacher, with patience and care. You never showed pride in your achievements—instead, you used your knowledge to help others like me.
-I will always remember those market walks, shared laughs, and those long study hours. Your simplicity and brilliance together make you my role model. You are a true gem, and I will always be grateful that I got to learn from you—both in studies and in life.',
+I will always remember those market walks, shared laughs, and those long study hours. Your simplicity and brilliance together make you my role model. You are a true gem, and I will always be grateful that I got to learn from you—both in studies and in life.`,
   },
   jaybrat: {
     name: 'JAYBRAT BHAI',
