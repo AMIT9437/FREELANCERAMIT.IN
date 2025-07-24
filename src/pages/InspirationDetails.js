@@ -1,6 +1,6 @@
-// src/pages/InspirationDetail.js
+// src/pages/InspirationDetails.js
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 const inspirationData = {
   ashim: {
@@ -50,8 +50,9 @@ const inspirationData = {
   },
 };
 
-const InspirationDetail = () => {
+const InspirationDetails = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const person = inspirationData[id];
 
   if (!person) {
@@ -78,11 +79,34 @@ const InspirationDetail = () => {
           marginBottom: '20px'
         }}
       />
-      <p style={{ fontSize: '18px', lineHeight: '1.6', maxWidth: '600px', margin: 'auto', color: '#333' }}>
+      <p style={{
+        fontSize: '18px',
+        lineHeight: '1.6',
+        maxWidth: '600px',
+        margin: 'auto',
+        color: '#333'
+      }}>
         {person.message}
       </p>
+
+      <button
+        onClick={() => navigate('/inspiration')}
+        style={{
+          marginTop: '30px',
+          padding: '10px 20px',
+          backgroundColor: '#4b6cb7',
+          color: '#fff',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer',
+          fontSize: '16px',
+          transition: 'background 0.3s',
+        }}
+      >
+        ← Back to Inspiration
+      </button>
     </div>
   );
 };
 
-export default InspirationDetail;
+export default InspirationDetails;
