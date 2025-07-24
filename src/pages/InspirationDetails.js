@@ -51,8 +51,8 @@ const inspirationData = {
 };
 
 const InspirationDetail = () => {
-  const { name } = useParams();
-  const person = inspirationData[name];
+  const { id } = useParams();
+  const person = inspirationData[id];
 
   if (!person) {
     return <div style={{ padding: '30px', color: 'red' }}>Inspiration not found.</div>;
