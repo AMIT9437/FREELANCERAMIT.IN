@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import TopServices from "../components/TopServices";
 
 export default function Home() {
@@ -38,6 +39,30 @@ export default function Home() {
 
       <section>
         <TopServices />
+      </section>
+
+      {/* 🌟 My Inspiration Button Section */}
+      <section style={{ textAlign: "center", marginTop: "2rem" }}>
+        <Link to="/inspiration">
+          <button
+            style={{
+              background: "linear-gradient(135deg, #ff6ec4, #7873f5)",
+              color: "#fff",
+              padding: "14px 34px",
+              fontSize: "18px",
+              fontWeight: "bold",
+              borderRadius: "40px",
+              border: "none",
+              cursor: "pointer",
+              boxShadow: "0 8px 20px rgba(0,0,0,0.2)",
+              transition: "transform 0.3s ease",
+            }}
+            onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
+            onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+          >
+            💖 My Inspiration
+          </button>
+        </Link>
       </section>
 
       <footer style={{ marginTop: "3rem", textAlign: "center", fontSize: "0.9rem", color: "#777" }}>
