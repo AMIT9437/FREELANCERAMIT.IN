@@ -23,7 +23,7 @@ export default function Home() {
         <h2>AMIT SAMAL</h2>
         <p style={{ lineHeight: "1.6", textAlign: "justify" }}>
           🎓 <strong>About My Qualifications:</strong> I hold a Bachelor of Commerce (B.Com) degree with specialization in Accounting and Taxation.
-          I’m also pursuing the prestigious CMA (Cost and Management Accountancy) qualification for advanced finance and strategy knowledge.
+          and have successfully cleared CA Intermediate on July 6, 2025, strengthening my skills in accounting, audit, and taxation. I’m also pursuing the CMA qualification and recently appeared for CMA Intermediate (June 2026 term).
           Additionally, I’m certified in GST, ITR filing, and compliance services.
           <br /><br />
           💻 On the tech side, I specialize in full-stack web development using HTML, CSS, and Python (Flask). I'm skilled in tools like Canva and Photoshop to create sleek, custom graphics and designs. From legal registration to online presence, I provide one-stop business support for freelancers, influencers, and MSMEs.
