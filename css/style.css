@@ -1,0 +1,191 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body and colors */
+body {
+  background-color: #f9faff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.page-header {
+  text-align: center;
+  padding: 50px 20px 20px 20px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+}
+.page-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.page-header p {
+  font-size: 1.1em;
+}
+
+/* Hamburger menu */
+#hamburger-menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+.menu-toggle {
+  font-size: 2em;
+  cursor: pointer;
+  color: #1e3c72;
+}
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #2a5298;
+  color: white;
+  transition: left 0.3s ease;
+  padding-top: 80px;
+}
+#sidebar ul {
+  list-style: none;
+}
+#sidebar ul li {
+  margin: 20px 0;
+  text-align: center;
+}
+#sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#sidebar.active {
+  left: 0;
+}
+
+/* Inspiration Section */
+.inspiration-list {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+.inspiration-item {
+  background-color: white;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.inspiration-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #1e3c72;
+}
+.inspiration-item h2 {
+  font-size: 1.8em;
+  color: #1e3c72;
+  margin-bottom: 10px;
+}
+.inspiration-item p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2a5298;
+  color: white;
+  margin-top: 50px;
+}
+
+/* Scroll-to-top button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #1e3c72;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1.5em;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+#scrollTopBtn:hover {
+  background-color: #2a5298;
+}
+
+/* Social media floating buttons */
+.social-buttons {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+.social-icon {
+  display: block;
+  margin: 5px 0;
+  width: 50px;
+  height: 50px;
+  background-color: #1e3c72;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.social-icon:hover {
+  background-color: #2a5298;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .inspiration-item {
+    padding: 15px;
+  }
+  .page-header h1 {
+    font-size: 2em;
+  }
+  .page-header p {
+    font-size: 1em;
+  }
+}
+
+/* Banner Carousel */
+.banner-carousel {
+  position: relative;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+.banner-slide {
+  display: none;
+  width: 100%;
+}
+.banner-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
